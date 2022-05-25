@@ -1,0 +1,180 @@
+@font-face {
+  font-family: Norse;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  width: 1362px;
+  background-color: #e5e7eb;
+  display: flex;
+}
+
+/* Left */
+
+.container-left {
+  height: 100vh;
+  width: 37%;
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-logo {
+  width: 100%;
+  height: 141px;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: relative;
+  top: 22%;
+  display: flex;
+  font-family: Norse;
+  font-size: large;
+  justify-content: center;
+}
+
+.odin-link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 5.6rem;
+  align-items: center;
+  height: 100%;
+}
+
+.odin-logo {
+  height: 85%;
+}
+
+.container-photo-referense {
+  margin: auto auto 0.8rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.container-photo-referense,
+.link-photo-reference {
+  color: white;
+  opacity: 0.75;
+}
+
+/* Right top*/
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  width: 63%;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.container-right-top {
+  height: calc(22% + 141px);
+  font-size: 1.35rem;
+  font-weight: 700;
+  padding: 35px 17% 4rem 5%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Right middle */
+
+.container-right-middle {
+  width: 100%;
+  background-color: white;
+}
+
+form {
+  padding: 1rem 5%;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-column-gap: 8%;
+  grid-row-gap: 1.3rem;
+  margin-bottom: 5px;
+}
+
+legend {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-legend {
+  grid-column: 1/3;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 3px;
+}
+
+input {
+  height: 30px;
+  border: 2px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+}
+
+.invalid-input:required:invalid {
+    outline: none;
+    border-color: red;
+}
+
+.password-invalid {
+    height: 15px;
+    font-size: 0.75rem;
+    color: red;
+}
+
+/* Right bottom */
+
+.container-right-bottom {
+    padding: 35px 17% 4rem 5%;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    width: 225px;
+    height: 47px;
+    color: white;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.log-in {
+    margin-top: 38px;
+    font-weight: 600;
+}
+
+.log-in-link {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
